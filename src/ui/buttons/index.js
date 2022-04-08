@@ -13,12 +13,6 @@ const Button = styled.button`
 `;
 
 
-
-// const IconButton = styled(Button)`
-//   box-shadow: none;
-//   border: 1px solid blue;
-// `;
-
 const IconButton = styled.button`
   border:none;
   background-color: transparent;
@@ -29,7 +23,7 @@ const UploadButton = styled(Button)`
     color: ${props => props.color || '#f8fafc'}; 
     font-weight: ${props => props.fw || '700'}; 
     font-size: ${props => props.fs || '14px'};
-    padding: auto 1rem;
+    padding: 1rem;
 `
 
 export { Button, IconButton, UploadButton };

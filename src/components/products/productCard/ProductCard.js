@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {ProductCardStyles, ProductDesc, ProductImage, ProductTitle, ProductPrice} from './styles';
+import {Button} from 'ui/buttons';
 
 
 function ProductCard ({children, product, ...props})  {
@@ -12,7 +13,8 @@ function ProductCard ({children, product, ...props})  {
           <ProductPrice>$ {productPrice}</ProductPrice>
           <ProductTitle>{productName}</ProductTitle>
           <ProductDesc>{productDesc}</ProductDesc>
-          
+          <Button bgcolor="blue" color="white">Edit</Button>
+          <Button bgcolor="Red" color="white">Delete</Button>
 
         </ProductCardStyles>
   )

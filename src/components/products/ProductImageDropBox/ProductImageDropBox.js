@@ -7,7 +7,6 @@
     const onDrop = useCallback(acceptedFiles => {
         const path = acceptedFiles[0] ;
          
-        //setProductImage(URL.createObjectURL(path));
         setProductImage({previewImage:URL.createObjectURL(path), file:acceptedFiles[0]});
       }, [setProductImage]);
       const {
