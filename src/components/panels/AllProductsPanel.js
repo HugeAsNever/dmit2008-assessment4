@@ -2,18 +2,19 @@ import React from "react";
 import { PanelStyles, PanelTitle, PanelBarItems, PanelBarItem, PanelBody } from "./styles";
 import {Button} from '../../ui/buttons';
 import {useNavigate} from "react-router-dom";
-import {ProductCard} from "components/productCard";
-import placeholder from 'assest/images/placeholder.png'
+import {ProductCard} from "components/products/productCard";
 
 
-function AllProductsPanel (props) {
+
+import {useGetProducts} from "hooks/useGetProducts";
+
+
+function AllProductsPanel ({title,...props}) {
 
 
     let navigation = useNavigate();
-    let productTitle = 'Product Name';
-    let productPrice = '123.45';
-    let productDesc = 'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have';
-    let productImage = placeholder;
+
+    const productData = useGetProducts();
 
     function onHandleAdd(evt) {
         evt.preventDefault();
@@ -29,11 +30,12 @@ function AllProductsPanel (props) {
             </PanelBarItems>
             <PanelTitle><h2>Product Listings</h2></PanelTitle>
             <PanelBody>
+            {productData? productData.map(product => <ProductCard key={product.uid} product = {product} />) :<p>no product in database</p>}
+                {/* <ProductCard title={productTitle} price={productPrice} desc={productDesc} image={productImage} />
                 <ProductCard title={productTitle} price={productPrice} desc={productDesc} image={productImage} />
                 <ProductCard title={productTitle} price={productPrice} desc={productDesc} image={productImage} />
                 <ProductCard title={productTitle} price={productPrice} desc={productDesc} image={productImage} />
-                <ProductCard title={productTitle} price={productPrice} desc={productDesc} image={productImage} />
-                <ProductCard title={productTitle} price={productPrice} desc={productDesc} image={productImage} />
+                <ProductCard title={productTitle} price={productPrice} desc={productDesc} image={productImage} /> */}
 
 
                 

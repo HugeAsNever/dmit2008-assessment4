@@ -1,5 +1,6 @@
 import React from "react";
 import { PanelStyles, PanelTitle, PanelBarItems, PanelBarItem, PanelBody } from "./styles";
+import {AddProduct} from 'components/products/widgets/AddProduct';
 
 
 function AddProductPanel (props) {
@@ -13,7 +14,7 @@ function AddProductPanel (props) {
             <PanelTitle><h2>Add a Product</h2></PanelTitle>
             <PanelBody>
                 
-
+                <AddProduct />
                 
             </PanelBody>
             

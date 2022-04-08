@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const ProductCardStyles  = styled.section`
     width: 25rem;
-    height: 35rem;
+    height: 45rem;
     background-color: white;
     padding: 0.5rem;
     margin: 1.5rem 1.5rem;
@@ -25,6 +25,7 @@ const ProductTitle = styled.h3`
     font-size:1.75rem;
     color:#374151;
     font-weight: bolder;
+    margin-bottom:1rem;
 `;
 
 const ProductImage = styled.div`

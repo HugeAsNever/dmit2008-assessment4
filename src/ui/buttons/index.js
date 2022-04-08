@@ -24,4 +24,11 @@ const IconButton = styled.button`
   background-color: transparent;
 `;
 
-export { Button, IconButton };
+const UploadButton = styled(Button)`
+    background-color: ${props => props.bgcolor || '#2563eb'};
+    color: ${props => props.color || '#f8fafc'}; 
+    font-weight: ${props => props.fw || '700'}; 
+    font-size: ${props => props.fs || '14px'};
+`
+
+export { Button, IconButton, UploadButton };
