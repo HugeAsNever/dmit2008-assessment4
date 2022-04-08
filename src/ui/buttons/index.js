@@ -29,6 +29,7 @@ const UploadButton = styled(Button)`
     color: ${props => props.color || '#f8fafc'}; 
     font-weight: ${props => props.fw || '700'}; 
     font-size: ${props => props.fs || '14px'};
+    padding: auto 1rem;
 `
 
 export { Button, IconButton, UploadButton };

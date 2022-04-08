@@ -6,44 +6,25 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This assesment includes three pages
 
-- Login Page
-- Dashboard Page
-- 404 Not Found Page
-
-## Login Page
-
-    Form validation errors are handled using toast messages. Toast will
-    present firebase default error codes or custom error codes.
-    Firebase default user sign in redirect to dashboard.
+- All Products Panel
+- Add product panel
 
 
+## All Products Panel
 
-Using React bootstrap
-
-## Dashboard Page
-
-### Nested
-
-        Requirements
-        Three nested routes.
-        View All Panel Route path all set as default route.
-        Add New Product Panel route path add
-        Edit Product Panel route path edit.
-
-## 404 Page
-
-    Implements authStateChange
-    Uses conditional rendering based user authentication.
-    Valid user returned to the dashboard page.
-    Invalid user returned to login page.
-    Custom styled page with branding/logo
-
-## Product Card
-
-    View all page provides and example of the Product card
-    Product card contains a placeholder image, product price and description..
+ - Custom Product Card Component
+ - Conditional rendering of the product card UI.
+ - Component card display logic.
+ - Completion of the firebase read functionality
 
 
 
-Using style component.
+
+## Product EditorComponent
+
+ - Editor component custom loading interface and product preview.
+ - Preview component update functionality.
+ - Preview component write functionality.
+ - Feedback component functionality.
+ - Feedback option functionality.
 
